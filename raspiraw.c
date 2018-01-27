@@ -553,10 +553,11 @@ static int parse_cmdline(int argc, char **argv, RASPIRAW_PARAMS_T *cfg)
 				}
 				cfg->output = malloc(len + 10); // leave enough space for any timelapse generated changes to filename
 				vcos_assert(cfg->output);
-				if (cfg->output)
+                if (cfg->output){
 					strncpy(cfg->output, argv[i + 1], len+1);
 					i++;
 					cfg->capture = 1;
+                }
 				}
 				else
 					valid = 0;
