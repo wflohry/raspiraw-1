@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 3.0)
 message("--------------------")
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
-project(MarkPi)
+project(rapsiraw)
 set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}")
 
 set(ARM_FLAGS "-ftree-vectorize;-mfpu=fp-armv8;-Werror;-Wno-psabi;-Wall;-Wno-error=comment")
